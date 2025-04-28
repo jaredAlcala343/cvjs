@@ -1,0 +1,141 @@
+/* Variables */
+:root {
+    --primary-color: #2563eb;
+    --primary-hover: #1d4ed8;
+    --text-color: #333333;
+    --text-light: #666666;
+    --bg-color: #000000;
+    --border-color: #e5e7eb;
+    --shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s ease;
+  }
+  
+  /* Estilos base */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow);
+    z-index: 1000;
+    transition: var(--transition);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+  }
+  
+  .header.scrolled {
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Branding */
+  .brand {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .name {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.2;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-light);
+  }
+  
+  /* Navegación */
+  .nav {
+    display: flex;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 2rem;
+  }
+  
+  .nav-item {
+    position: relative;
+  }
+  
+  .nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: var(--transition);
+    display: inline-block;
+  }
+  
+  .nav-link:hover {
+    color: var(--primary-color);
+  }
+  
+  .nav-link.active {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+  
+  .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: var(--transition);
+  }
+  
+  .nav-link:hover .underline,
+  .nav-link.active .underline {
+    width: 100%;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+    
+    .nav {
+      width: 100%;
+      margin-top: 1rem;
+    }
+    
+    .nav-list {
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+    }
+    
+    .nav-link {
+      padding: 0.5rem 0;
+      display: block;
+    }
+    
+    .underline {
+      display: none;
+    }
+  }
