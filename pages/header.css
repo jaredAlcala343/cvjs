@@ -111,31 +111,64 @@
     width: 100%;
   }
   
-  /* Responsive */
-  @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 1rem;
-    }
-    
-    .nav {
-      width: 100%;
-      margin-top: 1rem;
-    }
-    
-    .nav-list {
-      flex-direction: column;
-      gap: 0.5rem;
-      width: 100%;
-    }
-    
-    .nav-link {
-      padding: 0.5rem 0;
-      display: block;
-    }
-    
-    .underline {
-      display: none;
-    }
+  /* Estilos responsivos adicionales */
+@media (max-width: 768px) {
+  /* Mostrar el botón de menú hamburguesa */
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+    z-index: 1100;
   }
+
+  /* Ocultar la navegación por defecto */
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--bg-color);
+    width: 100%;
+    box-shadow: var(--shadow);
+    z-index: 1000;
+  }
+
+  /* Mostrar la navegación cuando el menú está abierto */
+  .nav.open {
+    display: flex;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  .nav-item {
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+
+  .underline {
+    display: none;
+  }
+
+  /* Ajustar el contenedor */
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .brand {
+    flex: 1;
+  }
+}

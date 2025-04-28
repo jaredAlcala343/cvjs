@@ -7,12 +7,12 @@ import Link from 'next/link';
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState('#home');
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para el menú hamburguesa
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
       
-      // Actualizar el link activo basado en la posición de scroll
       const sections = ['home', 'profile', 'portfolio', 'contact'];
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -45,14 +45,25 @@ export default function Header() {
           <p className="title">Ingeniero de Software</p>
         </div>
         
-        <nav className="nav">
+        <button 
+          className="menu-toggle" 
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
+
+        <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
           <ul className="nav-list">
             {navItems.map((item) => (
               <li key={item.id} className="nav-item">
                 <Link 
                   href={item.href}
                   className={`nav-link ${activeLink === item.href ? 'active' : ''}`}
-                  onClick={() => setActiveLink(item.href)}
+                  onClick={() => {
+                    setActiveLink(item.href);
+                    setIsMenuOpen(false); // Cerrar el menú al hacer clic
+                  }}
                 >
                   {item.name}
                   <span className="underline"></span>
