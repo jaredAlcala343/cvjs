@@ -48,7 +48,15 @@ export default function Portfolio() {
           description: 'Landing page optimizada para SEO y conversiones',
           technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
           image: '/landing.jpg' // Asegúrate de que esta imagen exista
-        }
+        },
+        {
+          id: 'dev-3',
+          name: 'Punto de Venta',
+          url: 'https://store-ten-tawny.vercel.app/', // URL válida
+          description: 'punto de venta sin necesidad de base de datos o backend',
+          technologies: ['Reactjs'],
+          image: '/punto_venta.jpg' // Asegúrate de que esta imagen exista
+        },
       ]
     }
   };

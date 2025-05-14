@@ -48,7 +48,7 @@
     margin: 0;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--text-color);
+    color: #ffffff;
     line-height: 1.2;
   }
   
@@ -56,7 +56,7 @@
     margin: 0;
     font-size: 0.9rem;
     font-weight: 400;
-    color: var(--text-light);
+    color: #ffffff;
   }
   
   /* Navegación */
@@ -109,6 +109,11 @@
   .nav-link:hover .underline,
   .nav-link.active .underline {
     width: 100%;
+  }
+  
+  /* Ocultar el botón de menú toggle en pantallas grandes */
+  .menu-toggle {
+    display: none;
   }
   
   /* Estilos responsivos adicionales */
