@@ -35,7 +35,7 @@ export default function Portfolio() {
       websites: [
         {
           id: 'dev-1',
-          name: 'Control de Vacunaciones',
+          name: 'Landing con envio de correos y contactos',
           url: 'https://kzstudioscuu.vercel.app/', 
           description: 'Aplicación para el estudio KZStudios',
           technologies: ['Next.js', 'Node.js', 'sql-server'],
@@ -65,7 +65,7 @@ export default function Portfolio() {
           technologies: ['Reactjs'],
           image: '/punto_venta.jpg'
         } 
-    ],
+      ],
     }
   };
 
