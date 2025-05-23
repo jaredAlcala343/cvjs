@@ -36,28 +36,36 @@ export default function Portfolio() {
         {
           id: 'dev-1',
           name: 'Control de Vacunaciones',
-          url: 'https://vacunaciones.vercel.app/', // URL válida
-          description: 'Aplicación para gestionar el control de vacunaciones',
-          technologies: ['React', 'Node.js', 'MongoDB'],
-          image: '/vacunaciones.jpg' // Asegúrate de que esta imagen exista
+          url: 'https://kzstudioscuu.vercel.app/', 
+          description: 'Aplicación para el estudio KZStudios',
+          technologies: ['Next.js', 'Node.js', 'sql-server'],
+          image: '/kzstudioscuu.jpg' 
         },
         {
           id: 'dev-2',
-          name: 'Landing Page Next.js',
-          url: 'https://hero-it.vercel.app/', // URL válida
-          description: 'Landing page optimizada para SEO y conversiones',
-          technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-          image: '/landing.jpg' // Asegúrate de que esta imagen exista
+          name: 'Control de Vacunaciones',
+          url: 'https://vacunaciones.vercel.app/', 
+          description: 'Aplicación para gestionar el control de vacunaciones',
+          technologies: ['React', 'Node.js', 'postgreSQL'],
+          image: '/vacunaciones.jpg' 
         },
         {
           id: 'dev-3',
+          name: 'Landing Page Next.js',
+          url: 'https://hero-it.vercel.app/', 
+          description: 'Landing page optimizada para SEO y conversiones',
+          technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
+          image: '/landing.jpg' 
+        },
+        {
+          id: 'dev-4',
           name: 'Punto de Venta',
-          url: 'https://store-ten-tawny.vercel.app/', // URL válida
+          url: 'https://store-ten-tawny.vercel.app/', 
           description: 'punto de venta sin necesidad de base de datos o backend',
           technologies: ['Reactjs'],
-          image: '/punto_venta.jpg' // Asegúrate de que esta imagen exista
-        },
-      ]
+          image: '/punto_venta.jpg'
+        } 
+    ],
     }
   };
 
