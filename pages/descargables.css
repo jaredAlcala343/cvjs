@@ -1,0 +1,121 @@
+/* Variables para consistencia */
+:root {
+  --primary-color: #3a86ff;
+  --secondary-color: #8338ec;
+  --dark-color: #212529;
+  --light-color: #f8f9fa;
+  --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Sección principal */
+.descargables-section {
+  background: linear-gradient(-45deg, #f8f9fa, #e9ecef, #dee2e6, #ced4da);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  padding: 4rem 1rem;
+  min-height: 60vh;
+}
+
+.descargables-container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 2.5rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.descargables-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--dark-color);
+  margin-bottom: 1.5rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.descargables-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.descargable-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--light-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(58, 134, 255, 0.07);
+  margin-bottom: 1.2rem;
+  padding: 1rem 1.5rem;
+  transition: var(--transition);
+}
+
+.descargable-item:last-child {
+  margin-bottom: 0;
+}
+
+.descargable-name {
+  font-size: 1.1rem;
+  color: var(--dark-color);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.descargable-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.descargable-link {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background: var(--gradient);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(58, 134, 255, 0.13);
+  transition: var(--transition);
+}
+
+.descargable-link:hover {
+  background: var(--secondary-color);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .descargables-container {
+    padding: 1.2rem 0.5rem;
+  }
+  .descargable-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.7rem;
+    padding: 1rem;
+  }
+  .descargable-link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Animación de fondo */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

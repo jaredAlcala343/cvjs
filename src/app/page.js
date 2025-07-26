@@ -4,6 +4,7 @@ import Portafolio from '../../pages/portafolio';
 import Header from '../../pages/header';
 import Footer from '../../pages/footer';
 import Contact from '../../pages/contact';
+import Descargables from '../../pages/descargables';
 
 // Ejemplo de uso de los módulos importados
 function App() {
@@ -12,6 +13,7 @@ function App() {
             <Header />
             <Profile />
             <Portafolio />
+            <Descargables />
             <Contact />
             <Footer />
         </div>
