@@ -27,6 +27,34 @@ export default function Portfolio() {
           title: 'Composición digital',
           year: 2023
         },
+        {
+          id: 'edit-3',
+          src: '/publicidad.jpg', // Asegúrate de que esta imagen exista
+          alt: 'Creación de publicidad',
+          title: 'Edición de publicidad',
+          year: 2025
+        },
+        {
+          id: 'edit-4',
+          src: '/Diseno-logo.jpg', // Asegúrate de que esta imagen exista
+          alt: 'Creacion de logotipos',
+          title: 'creacion de logotipos',
+          year: 2024
+        },
+        {
+          id: 'edit-5',
+          src: '/paisaje.jpg', // Asegúrate de que esta imagen exista
+          alt: 'Edición fotográfica paisaje',
+          title: 'Edición fotográfica paisaje',
+          year: 2022
+        }, 
+        {
+          id: 'edit-6',
+          src: '/avanzada.jpg', // Asegúrate de que esta imagen exista
+          alt: 'Edición fotográfica avanzada',
+          title: 'Edicion avanzada',
+          year: 2024
+        }
       ]
     },
     desarrollo: {
@@ -64,7 +92,31 @@ export default function Portfolio() {
           description: 'punto de venta sin necesidad de base de datos o backend',
           technologies: ['Reactjs'],
           image: '/punto_venta.jpg'
-        } 
+        } ,
+        {
+          id: 'dev-5',
+          name: 'Portafolio Profesional',
+          url: 'https://jaredcv.vercel.app/', 
+          description: 'Portafolio profesional con proyectos destacados',
+          technologies: ['Next.js', 'React', 'CSS'],
+          image: '/portafolio.jpg' 
+        },
+        {
+          id: 'dev-6',
+          name: 'Sistema de Gestión de Flotillas Vehiculares',
+          url: 'https://crm-flotillas2.vercel.app/', 
+          description: 'Aplicación para gestionar Flotillas Vehiculares',
+          technologies: ['Next.js', 'Node.js', 'MongoDB'],
+          image: '/crm-flotillas.jpg' 
+        },
+        {
+          id: 'dev-7',
+          name: 'Sistema Acortador de URLs',
+          url: 'https://acortadorurlkz.vercel.app/', 
+          description: 'Aplicación para cambiar URLs largas a cortas',
+          technologies: ['Next.js', 'Node.js', 'supabase', 'postgreSQL', 'tailwind'],
+          image: '/acortador.jpg' 
+        }
       ],
     }
   };

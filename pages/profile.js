@@ -35,13 +35,13 @@ export default function Profile() {
           puesto: 'Ingeniero de Soporte', 
           empresa: 'Soho Square', 
           periodo: '2023 - 2024',
-          descripcion: 'Gestión de la infraestructura tecnológica para empresa de bienes raíces. Implementación de sistema de tickets que mejoró la resolución de incidencias en un 40%.'
+          descripcion: 'Gestión de la infraestructura tecnológica para empresa de Markwting.'
         },
         { 
           puesto: 'Ingeniero de Software', 
           empresa: 'TGC', 
           periodo: '2021 - 2023',
-          descripcion: 'Desarrollo de aplicaciones web para gestión educativa. Lideré el equipo que creó un sistema de aprendizaje en línea con aumento del 30% en retención estudiantil.'
+          descripcion: 'Desarrollo y soporte de aplicaciones web para gestión gubernamental'
         },
         { 
           puesto: 'Ingeniero de Soporte', 
@@ -95,10 +95,11 @@ export default function Profile() {
 
   const habilidades = {
     "Frontend": ['React.js', 'TypeScript', 'Next.js', 'HTML5/CSS3', 'Tailwind CSS'],
-    "Backend": ['Node.js', 'Python', 'Express', 'Django', 'GraphQL'],
+    "Backend": ['Node.js', 'Python', 'bash'],
     "Bases de Datos": ['MySQL', 'PostgreSQL', 'SQL Server', 'PL/SQL'],
     "Idiomas": ['Inglés (Avanzado)', 'Español (Nativo)'],
-    "Otros": ['Git', 'Scrum', 'Agile', 'Adobe Photoshop', 'Premiere Pro', 'After Effects', 'lightroom', 'Audition', 'Blender' ]
+    "Redes y Seguridad": ['TCP/IP', 'Seguridad Informática', 'Firewalls', 'VPNs', 'dvrs', 'Sistemas de Detección de Intrusos','Telefnía IP'],
+    "Otros": ['Git', 'Scrum', 'Agile', 'Adobe Photoshop', 'Premiere Pro', 'After Effects', 'lightroom', 'Audition', 'Blender', 'Contpaqi' ]
   };
 
   return (
