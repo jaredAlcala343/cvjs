@@ -5,7 +5,7 @@
   --dark-color: #212529;
   --light-color: #f8f9fa;
   --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
   --transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -53,7 +53,7 @@
   justify-content: space-between;
   background: var(--light-color);
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(58, 134, 255, 0.07);
+  box-shadow: 0 2px 8px rgb(255, 255, 255);
   margin-bottom: 1.2rem;
   padding: 1rem 1.5rem;
   transition: var(--transition);
@@ -86,7 +86,7 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
-  box-shadow: 0 2px 8px rgba(58, 134, 255, 0.13);
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.973);
   transition: var(--transition);
 }
 

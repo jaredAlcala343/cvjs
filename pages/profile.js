@@ -10,7 +10,7 @@ export default function Profile() {
         { 
           puesto: 'Ingeniero de Automatización', 
           empresa: 'Cubylam Chalet', 
-          periodo: '2024 - Presente',
+          periodo: '2024 - 2025',
           descripcion: 'Desarrollo e implementación de sistemas de automatización para procesos hoteleros utilizando IoT y sistemas embebidos. Creación de dashboards interactivos para monitoreo en tiempo real, mejorando la eficiencia operativa en un 35%.'
         },
         { 
