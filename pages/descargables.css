@@ -1,13 +1,5 @@
 /* Variables para consistencia */
-:root {
-  --primary-color: #3a86ff;
-  --secondary-color: #8338ec;
-  --dark-color: #212529;
-  --light-color: #f8f9fa;
-  --gradient: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  --shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-  --transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
+
 
 /* Sección principal */
 .descargables-section {
@@ -35,10 +27,9 @@
   text-align: center;
   color: var(--dark-color);
   margin-bottom: 1.5rem;
-  background: var(--gradient);
+  background: #ffffff;
   -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  background-clip: text;  
 }
 
 .descargables-list {
@@ -49,14 +40,11 @@
 
 .descargable-item {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background: var(--light-color);
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgb(255, 255, 255);
-  margin-bottom: 1.2rem;
-  padding: 1rem 1.5rem;
-  transition: var(--transition);
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e9ecef;
+  gap: 1rem;
 }
 
 .descargable-item:last-child {
